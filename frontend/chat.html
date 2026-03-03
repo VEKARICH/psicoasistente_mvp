@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PsicoAsistente - Chat</title>
+  <link rel="stylesheet" href="/frontend/styles.css" />
+</head>
+<body data-page="chat">
+  <div class="chat-layout">
+    <aside class="sidebar card">
+      <h2>PsicoAsistente</h2>
+      <p id="user-email">No autenticado</p>
+      <div class="disclaimer-box small">
+        <strong>Disclaimer:</strong>
+        <p>Esto no sustituye terapia profesional. Si estás en crisis o en peligro, busca ayuda profesional o servicios de emergencia de tu país.</p>
+      </div>
+      <button id="logout-btn" class="secondary">Cerrar sesión</button>
+      <button id="refresh-history-btn" class="secondary">Recargar historial</button>
+      <div class="health-box">
+        <small id="health-status">/health: cargando...</small>
+      </div>
+    </aside>
+
+    <main class="chat-main card">
+      <header class="chat-header">
+        <h1>Chat de apoyo (orientación general)</h1>
+      </header>
+
+      <section id="messages" class="messages"></section>
+
+      <div id="response-meta" class="response-meta"></div>
+
+      <form id="chat-form" class="chat-form">
+        <textarea id="message-input" rows="3" placeholder="Escribe cómo te sientes o qué te preocupa..." maxlength="2000" required></textarea>
+        <div class="chat-actions">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <audio id="assistant-audio" preload="auto"></audio>
+  <script src="/frontend/app.js"></script>
+</body>
+</html>

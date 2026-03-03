@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PsicoAsistente - Login</title>
+  <link rel="stylesheet" href="/frontend/styles.css" />
+</head>
+<body data-page="auth">
+  <main class="container auth-page">
+    <section class="card hero-card">
+      <h1>PsicoAsistente (MVP)</h1>
+      <p class="subtitle">Asistente interactivo con orientación general y audio (ElevenLabs)</p>
+      <div class="disclaimer-box">
+        <strong>Disclaimer:</strong>
+        <p id="global-disclaimer">Esto no sustituye terapia profesional. Si estás en crisis o en peligro, busca ayuda profesional o servicios de emergencia de tu país.</p>
+      </div>
+    </section>
+
+    <section class="auth-grid">
+      <div class="card">
+        <h2>Registro</h2>
+        <form id="register-form">
+          <label>Nombre (opcional)</label>
+          <input type="text" name="full_name" placeholder="Tu nombre" maxlength="120" />
+          <label>Email</label>
+          <input type="email" name="email" required placeholder="correo@ejemplo.com" />
+          <label>Contraseña</label>
+          <input type="password" name="password" required minlength="8" placeholder="Mínimo 8 caracteres" />
+          <button type="submit">Crear cuenta</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Iniciar sesión</h2>
+        <form id="login-form">
+          <label>Email</label>
+          <input type="email" name="email" required placeholder="correo@ejemplo.com" />
+          <label>Contraseña</label>
+          <input type="password" name="password" required placeholder="Tu contraseña" />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="card" id="status-card">
+      <h3>Estado</h3>
+      <pre id="status-output">Listo.</pre>
+    </section>
+  </main>
+
+  <script src="/frontend/app.js"></script>
+</body>
+</html>
