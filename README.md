@@ -17,7 +17,7 @@ Aplicación web full-stack con registro/login (JWT), chat con historial por usua
 
  2) Estructura del proyecto
 
-text
+```text
 D:.
 ├───.venv
 │   ├───Include
@@ -511,7 +511,7 @@ D:.
 ├───frontend
 ├───media
 └───scripts
-
+```
 3) Instalación (Windows PowerShell)
 
 Paso 1: Entrar al proyecto
